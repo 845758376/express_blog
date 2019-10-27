@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>乐谱DOMO</title>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/js.js" type="text/javascript"></script>
+		<!--页面加载-->
+		<link rel="stylesheet" href="../css/页面加载.css" />
+		<!--/*目录和LOGO部分*/-->
+	<link rel="stylesheet" href="../css/header.css" type="text/css">
+			
+<!--/*页脚部分css	*/-->
+	<link rel="stylesheet" href="../css/footer.css" type="text/css">
+<!--/*主体部分CSS*/-->
+	<link rel="stylesheet" href="../css/domo_main.css" type="text/css">		
+		<style>
+			body{margin: 0;padding: 0;}
+			html{background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);background-repeat: no-repeat;background-size:100% 100%;background-attachment: fixed;}
+
+		</style>
+		<script>
+			$(function() {
+		    $("#li").bind({
+		        "mouseenter": function() {
+		            $(this).animate({
+		                "background-position-x": "0px"
+		            }, 200);
+		        },
+		        "mouseleave": function() {
+		            $("#li").stop(true, true);
+		            $(this).animate({
+		                "background-position-x": "-58px"
+		            }, 200);
+		        }
+		    });
+		    $(window).bind("scroll", function() {
+		        var wtop = $(document).scrollTop();
+		        if (wtop >= 800) {
+		            $("#ul li:first").fadeIn(200);
+		        } else {
+		            $("#ul li:first").fadeOut(200);
+		        }
+		    });
+		    $("#ul li:first").bind("click", function() {
+		        $("html,body").animate({
+		            "scrollTop": "0px"
+		        });
+		    });
+		});
+			
+		</script>
+	</head>
+	<body>
+	<div class="site-welcome active" id="siteWelcome">
+        <div class="loading"></div>
+    </div>
+		
+<!--点击置顶-->
+	<ul class="zhidingul" id="ul">
+	    <li style="display: none;" id="li" class="zhidingli"><img src="../images/zhiding.gif" onmouseover="this.src='../images/zhiding2.gif'" onmouseout="this.src='../images/zhiding.gif'" width="50px" height="50px;"></li>
+	</ul>
+	
+	
+		<header>
+    <div class="navbar-container">
+        <!-- 左边图标和logo -->
+        <div class="navbar-left">
+            <a href="pc.html"><img src="../images/logo.png" class="img1"></a>
+            <h1 class="h1">陈嗯嗯Domo基地</h1><br/>
+            <span class="h2">Mr.uh Domo Site</span>
+        </div>
+        
+     <div class="navbar-morebox">
+            <button class="more-btn">
+            <img src="../images/more.png" alt="">
+            </button>
+        </div>
+        <!-- 导航菜单-->
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="../index.html">首页</a></li>
+            <li class="navbar-item"><a href="Experiment.html" target="_blank">Experiment</a></li>
+            <li class="navbar-item"><a href="domo.html" target="_blank">小domo</a></li>
+            <li class="navbar-item"><a href="personal space.html" target="_blank">个人作品</a></li>
+            <li class="navbar-item"><a href="about me.html" target="_blank">关于我</a></li>
+        </ul>
+
+        <!-- 搜索框 -->
+        <div class="navbar-search">
+        <form action="http://www.baidu.com/s" method="get">
+            <input type="text" class="search" placeholder="百度一下，你就知道" name="w" >
+            <button class="search-btn">
+                <img src="../images/search.png">
+            </button>
+        </form>
+        </div>
+        <!-- 更多按钮 -->
+        <!--小屏幕显示 -->
+
+    </div>
+    <!-- 手机或平板屏幕显示 -->
+    <ul class="small-list" id="small-list">
+        <li class="small-item"><a href="../index.html">首页</a></li>
+        <li class="small-item"><a href="Experiment.html">Experiment</a></li>
+        <li class="small-item"><a href="domo.html">小domo</a></li>
+        <li class="small-item"><a href="personal space.html">个人作品</a></li>
+        <li class="small-item"><a href="about me.html">关于我</a></li>
+        <li class="small-item">
+        <form action="http://www.baidu.com/s" method="get">
+            <input type="text" class="search" placeholder="百度一下，你就知道" name="w" >
+            <button class="search-btn">
+                <img src="../images/search.png">
+            </button>
+        </form>
+        </li>
+    </ul>
+	</header>
+<!--主体部分-->
+	<div style="margin: 30px 0 30px 0;">
+	<div style="text-align: center; ">
+		<iframe src="little domo/domo (1).html" name="iframe_a" class="iframe"></iframe>
+	</div>
+	</div>
+	<hr>
+	<main>
+	<ul>
+	<li><div class="button-border"><a href="little domo/domo (1).html" target="iframe_a"><button class="button">i love you无望</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (2).html" target="iframe_a"><button class="button">爱情的模样</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (3).html" target="iframe_a"><button class="button">彩虹</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (4).html" target="iframe_a"><button class="button">而我知道</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (5).html" target="iframe_a"><button class="button">好不好</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (6).html" target="iframe_a"><button class="button">恒星的恒心</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (7).html" target="iframe_a"><button class="button">倔强</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (8).html" target="iframe_a"><button class="button">最重要的小事</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (9).html" target="iframe_a"><button class="button">拥抱</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (10).html" target="iframe_a"><button class="button">让我照顾你</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (11).html" target="iframe_a"><button class="button">突然好想你</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (12).html" target="iframe_a"><button class="button">星空</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	<li><div class="button-border"><a href="little domo/domo (13).html" target="iframe_a"><button class="button">温柔</button></a></div></li>
+	</ul>
+	
+	</main>			
+						
+<!--页脚部分-->
+		<footer><div class="footer">
+		<a href="http://www.cth1688.cn/">Home</a> | <a href="#">Terms of Use</a> | <a href="#">FAQs</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a><br />
+        Copyright © 2019 <a href="#"> cth1688 </a> | Designed by <a href="pc.html" target="_blank">www.cth1688.cn</a>
+		</div></footer>		
+				
+					
+    <script>
+       //当代码加载到这里的时候,执行这个script,当代码加载到这里,说明loading该结束了
+        window.onload=function(){
+            var siteWelcome = document.getElementById('siteWelcome');
+            siteWelcome.classList.remove('active');
+        }
+    </script>
+	</body>
+</html>
