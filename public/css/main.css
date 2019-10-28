@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+main{text-align: center;margin: 0 160px 60px 120px;}
+main ul{
+/* 栏宽度 */
+-webkit-column-width:160px;
+-moz-column-width:160px;
+-o-colum-width:160px;
+column-width:160px;
+/* 两栏之间的间距 */
+-webkit-column-gap:10px;
+-moz-column-gap:10px;
+-o-column-gap:10px;
+column-gap:10px;
+/* 栏数 */	
+-webkit-column-count:5;
+-moz-column-count:5;
+-o-column-count:5;
+column-count:5;
+}
+main ul li{
+display:inline-block;
+margin:8px 0;padding:2px 1px ;
+}
+main ul li div{width: 160px;height: 160px;background-color:white;padding: 2px 2px 12px 2px;font-weight: bold;box-shadow: 6px 6px 6px #6A6868;border: #759DF8 solid 3px;border-radius: 12px;}
+main ul li div a img{width: 160px;border-radius: 8px;position:relative;top:5px;}
+main ul li div a{text-decoration:none;color:#4877F7;}
+main ul li div a span{position:relative;bottom:-3px;}
+main ul li div a:hover{color:#DF52FF;font-weight: bold;} 
+
+@media screen and (min-width: 1200px) {
+	
+}
+@media screen and (max-width:1199px) {
+	
+}

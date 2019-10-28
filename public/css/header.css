@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+/*大屏或者超大屏显示*/
+		header{width: 100.4%}
+	 	@media screen and (min-width: 1200px) {
+		 html,body {margin: 0px;padding: 0px;}
+		 .navbar-container {
+			 background-image: url(../images/logo_bk.png);
+			 padding: 0 20px;
+			 height: 100px;
+		 }
+		 /*左边图标和logo*/
+		 .navbar-left {
+			 display: inline-block;
+			 text-align: center;
+			 margin: 17px 0px;
+			 margin-left: 25px;
+			 width: 250px;
+			 line-height: 12px;
+		 }
+		 .navbar-left .img1 {
+			 height: 60px;float: left;
+		 }
+		.navbar-left .h1{font-size: 22px;margin: 12px 0 0 0;}
+		.navbar-left .h2{font-size: 13px;}
+		 /*导航菜单*/
+		 .navbar-list {
+			 display: inline-block;
+			 list-style-type: none;
+			 text-align: center;
+			 margin: 0px;
+			 padding: 12px 0 0 0;
+			 position: relative;
+			 bottom: 10px;
+			 margin-left: 15px;
+			 float: right;top: 27px;right: 70px;
+		 }
+		 .navbar-list .navbar-item {
+			 display: inline-block;
+			 margin: 0 20px;
+		 }
+		 .navbar-list .navbar-item a {
+			 display: inline-block;
+			 padding: 0px 5px 9px 4px;
+			 color: gray;
+			 font-size: 17px;font-weight: bold;
+			 text-decoration: none;
+		 }
+		 .navbar-list .navbar-item a:hover {
+			 border-bottom: 3px solid black;
+			 color: black;
+		 }
+		     /*搜索框*/
+     .navbar-search {
+         display: inline-block;
+         position: relative;
+         bottom: 10px;
+         margin-left: 8px;
+     }
+     .navbar-search .search {
+         padding: 6px 12px;
+         font-size: 14px;
+         color: #555;
+         background-color: #fff;
+         background-image: none;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+     }
+     .navbar-search .search-btn {
+         background-color: #fff;
+         padding: 0px;
+         border: 1px solid #eee;
+         padding: 4px 7px;
+         border-radius: 4px;
+         position: relative;
+         top: 2px;
+     }
+     .navbar-search .search-btn:hover {
+         cursor: pointer;
+     } 
+     /*更多按钮*/
+     /*大屏隐藏*/
+     .navbar-morebox {display: none;}
+     #small-list {display: none;}
+ }
+ /*小屏幕显示  手机屏幕 和平板*/
+ 
+ @media screen and (max-width:1199px) {
+     html,body {margin: 0px;padding: 0px;}
+     .navbar-container {
+         width: 100%;
+         background-image: url(../images/logo_bk.png);
+		 background-color: gray;
+         padding: 0 20px;
+         text-align: center;
+		 height: 100px;
+     }
+     /*左边图标和logo*/
+     .navbar-left {
+         display: inline-block;
+         text-align: center;
+         margin: 30px 0 0 0;
+         margin-right: 100px;
+		 line-height: 12px;
+		 
+     }
+     .navbar-left .img1{width: 45px;margin: -25px 0 0 0;}
+	 .navbar-left .h1{font-size: 22px;margin: 9px 0 0 0;}
+	 .navbar-left .h2{font-size: 13px;}
+     /*导航菜单*/
+     .navbar-list {display: none;}
+     /*搜索框*/
+	
+     .navbar-search {
+         display: none;
+     }
+     .navbar-morebox {
+         display: inline-block;
+		 margin: 20px 0 0 0;
+		 position: relative;top: -38px;right: 30px;
+		 
+     }
+     .more-btn {
+         background-color: #fff;
+         border: 1px solid #eee;
+         padding: 4px 7px;
+         border-radius: 4px;
+     }
+     .more-btn:hover {cursor: pointer;}
+     .more-btn img {width: 25px;height: 25px;}
+     .small-list {
+         display: none;
+         width: 100%;
+         background-image: url(../images/logo_bk.png);
+         margin: 0px;
+         padding: 0px;
+         position: relative;
+         top: 1px;
+         list-style-type: none;
+         text-align: center;
+     }
+     .small-list .small-item {
+         width: 100%;
+         padding: 8px;
+         border-bottom: 2px solid #908D8D;
+     }
+     .small-list .small-item a {
+         color: gray;font-size: 15px;
+         text-decoration: none;
+     }
+	 .small-list .small-item a:hover{
+         color: black;font-weight: bold;font-size: 16px;
+         text-decoration: none;
+     }
+ }

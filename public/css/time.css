@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0;margin:0;list-style:none;vertical-align:middle;}
+body {background:#789DF3;}
+ul {width:36px;position:absolute;transition:all .75s;}
+main div {
+	width:36px;
+	position:absolute;
+	color:#FFFFFF;
+	top:36px;
+}
+main {
+	width:290px;
+	margin:100px auto;
+	position:relative;
+	height:108px;
+	overflow:hidden;
+}
+main ul li {height:36px;}
+main ul li.active {color:#fff;}

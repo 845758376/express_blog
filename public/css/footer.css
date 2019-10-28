@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+	footer{position: relative; margin-top: 0px;height: 60px; clear:both; }
+	.footer{background-color:black;height: 50px;color:white;text-align: center;padding: 6px 0px 0px 6px;font-size: 13px;width: 100%;}
+	footer div a{color: whitesmoke;text-decoration: none;line-height: 20px;}
+	footer div a:hover{color:dodgerblue;}

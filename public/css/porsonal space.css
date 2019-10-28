@@ -1,0 +1,205 @@
+@media screen and (min-width: 1200px) {
+	.main-left{
+		width:70%;height:1200px;float: left;margin: 30px 0 30px 0;border-radius: 30px;border: 3px solid #1E90FF;
+		background-color: rgba(255,255,255,0.4);
+		    /*-webkit-filter: blur(2px);
+		    -moz-filter: blur(2px);
+		    -ms-filter: blur(2px);
+		    -o-filter: blur(2px);
+		    filter: blur(2px);
+		    z-index:1 ;*/
+	}
+	
+	
+	.main-right{
+		width:28%;height:1200px ;float:right;margin: 30px 0 30px 0;border-radius: 30px;border: 3px solid #1E90FF;
+		background-color: rgba(255,255,255,0.4)
+	}
+	.icon{
+		width: 100%;height: 50px;background-color:#178CFF;margin: 0 auto;
+	}
+	.icon ul{ list-style-type: none;}
+	.icon ul li{float: left;margin: 10px 0 0 0;width: 55px; text-align: center;color:black;}
+	.icon ul li:hover{color: white;}
+	
+	
+	/*天气*/
+	.weather{
+		margin: 0 auto;width: 200px;
+	}
+	.weather-layout{margin: 30px 0 0 0;}
+	    .div1{
+        position:relative;
+        animation:mymove 5s infinite;
+        -moz-animation:mymove 5s infinite; /* Firefox */
+        -webkit-animation:mymove 5s infinite; /* Safari and Chrome */
+        -o-animation:mymove 5s infinite; /* Opera */
+    }
+	    @keyframes mymove{
+	        0%   {top:0px; left:0px;}
+	        25%  {top:0px; left:100px;}
+	        50%  {top:100px; left:100px;}
+	        75%  {top:100px; left:0px;}
+	        100% {top:0px; left:0px;}
+	    }
+	    @-moz-keyframes mymove /* Firefox */
+		{
+		0%   {top:0px; left:0px;}
+		25%  {top:0px; left:100px;}
+		50%  {top:100px; left:100px;}
+		75%  {top:100px; left:0px;}
+		100% {top:0px; left:0px;}
+		}
+		
+		@-webkit-keyframes mymove /* Safari and Chrome */
+		{
+		0%   {top:0px; left:0px;}
+		25%  {top:0px; left:100px;}
+		50%  {top:100px; left:100px;}
+		75%  {top:100px; left:0px;}
+		100% {top:0px; left:0px;}
+		}
+		
+		@-o-keyframes mymove /* Opera */
+		{
+		0%   {top:0px; left:0px;}
+		25%  {top:0px; left:100px;}
+		50%  {top:100px; left:100px;}
+		75%  {top:100px; left:0px;}
+		100% {top:0px; left:0px;}
+		}
+		.black_overlay {
+				display: none;
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 100%;
+				background-color: #ffffff;
+				z-index: 1001;
+				-moz-opacity: 0.8;
+				opacity: .80;
+				filter: alpha(opacity=80);
+			}
+			
+			.white_content {
+				display: none;
+				position: absolute;
+				top: 10%;
+				left: 30%;
+				background-color: white;
+				z-index: 1002;
+				/* 数字的大小指明了div的相对层，数字大的在上层 */
+				overflow: auto;
+			}
+			/*日历*/
+	<!--日历-->
+			.calendar {
+				width: 200px;
+				height: 350px;
+				background: #fff;
+				box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+				left: -100px;
+				
+			}
+			
+			.title {
+				height: 70px;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+				text-align: center;
+				position: relative;
+			}
+			
+			#calendar-title {
+				font-size: 25px;
+				font-family: arial;
+				font-weight: bold;
+				text-transform: uppercase;
+				padding: 0 0 0 0;
+			}
+			
+			#calendar-year {
+				font-size: 16px;
+				font-family: arial;
+				font-weight: normal;
+			}
+			
+			#prev {
+				text-indent: -9999px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 60px;
+				height: 70px;
+				background: url(prev.png) no-repeat 50% 50%;
+			}
+			
+			#next {
+				text-indent: -9999px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 60px;
+				height: 70px;
+				background: url(next.png) no-repeat 50% 50%;
+			}
+			
+			.body {
+				padding: 10px 20px;
+			}
+			
+			.body-list ul {
+				width: 100%;
+				font-family: arial;
+				font-weight: bold;
+				font-size: 14px;
+			}
+			
+			.body-list ul li {
+				width: 14.28%;
+				height: 36px;
+				line-height: 36px;
+				list-style-type: none;
+				display: block;
+				box-sizing: border-box;
+				float: left;
+				text-align: center;
+			}
+			
+			.lightgrey {
+				color: #a8a8a8;
+			}
+			
+			.darkgrey {
+				color: #565656;
+			}
+			
+			.green {
+				color: #6ac13c;
+			}
+			
+			.greenbox {
+				border: 1px solid #6ac13c;
+				background: #e9f8df;
+			}
+}
+@media screen and (max-width:1199px) {
+	.main-left{
+		width:100%;float: left;height:1200px;margin: 30px 0 30px 0;border-radius: 30px;border: 3px solid #1E90FF;background-color: rgba(255,255,255,0.4)
+	}
+	.main-right{
+		display: none;
+	}
+	
+}
+.main-content{
+	float: left;width: 200px;height: 200px;margin:20px 20px 20px 20px;border-radius: 20px;
+	border: 5px solid royalblue;
+}
+	.pics {overflow: hidden; width: 100%; clear: both ;margin: -25px 0 0 0;}
+	.pics ul li { width: 32.3%; float: left; display: block; overflow: hidden; position: relative;left: 10px;top: 10px;margin: 30px;border: 2px dashed #1E90FF;}
+	.pics ul li i { display: block; height: 150px; margin: 5px }
+	.pics ul li img { margin: auto; min-height: 100%; width: 100%; -moz-transition: all .5s ease; -webkit-transition: all .5s ease; transition: all .5s ease; }
+	.pics ul li span { position: absolute; color: #FFF; bottom: 0; left: 0; right: 0; font-size: 14px; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 2; padding: 10px 20px; opacity: 0; -moz-transition: all .5s ease; -webkit-transition: all .5s ease; transition: all .5s ease; }
+	.pics ul li:hover img { transform: scale(1.05) }
+	.pics ul li:hover span { opacity: 1; background: rgba(0,0,0,.5); }
