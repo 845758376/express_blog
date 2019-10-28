@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>vue计算器</title>
+		<link href="css/bootstrap.css" />
+		<script src="js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<div id="app" class="header container">
+			<input type="number" value="" v-model='num1' /><br />
+			<select v-model="operation">
+				<option value="1">+</option>
+				<option value="2">-</option>
+				<option value="3">*</option>
+				<option value="4">/</option>
+				<option value="5">%</option>
+			</select><br />
+			<input type="number" value="" v-model='num2'/><br />
+			<button v-on:click='addnum' class="btn btn-success">=</button><br />
+			<strong>{{res}}</strong>
+		</div>
+		
+		
+		<script src="vue.js"></script>
+		<script>
+			const app = new Vue({
+				el: '#app',
+				data: {
+					operation:'1',
+					num1: 0,
+					num2: 0,
+					res:0
+				},
+				methods: {
+					addnum: function() {
+						if (this.operation==='1'){
+							this.res=parseInt(this.num1)+parseInt(this.num2)
+						}else if(this.operation==='2'){
+							this.res=parseInt(this.num1)-parseInt(this.num2)
+						}else if(this.operation==='3'){
+							this.res=parseInt(this.num1)*parseInt(this.num2)
+						}else if(this.operation==='4'){
+							this.res=parseInt(this.num1)/parseInt(this.num2)
+						}else{
+							this.res=parseInt(this.num1)%parseInt(this.num2)
+						}
+						
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>
